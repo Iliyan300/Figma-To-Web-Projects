@@ -1,0 +1,32 @@
+.footer {
+	padding-block: 35px;
+}
+
+.footer .footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 50px;
+}
+
+.footer .footer__payment-methods {
+	display: flex;
+	gap: 10px;
+}
+
+.footer .footer__copyright  {
+	display: inline-flex;
+	gap: 40px;
+	padding-inline: 50px;
+	font-size: 11px;
+}
+
+@media(max-width:768px) {
+	.footer .footer__inner {
+		padding:25px 0;
+	}
+
+	.footer .footer__copyright {
+		padding: 0;
+	}
+}

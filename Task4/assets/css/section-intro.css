@@ -1,0 +1,17 @@
+.section-intro {
+	text-align: center;
+	padding-block: 70px;
+}
+
+.section-intro .section__content {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.section-intro .section__title {
+	margin-bottom: 20px;
+}
+
+.section-intro .section__entry {
+	margin-bottom: 20px;
+}

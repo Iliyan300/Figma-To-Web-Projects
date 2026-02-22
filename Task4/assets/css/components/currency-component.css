@@ -1,0 +1,50 @@
+.currency {
+	position: relative;
+}
+
+.currency .currency__selector {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	appearance: none;
+	padding-right: 20px;
+	font-size: 14px;
+	height: 100%;
+}
+
+.currency .currency__arrow {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.currency--col .currency__selector {
+	padding-left: 15px;
+}
+
+.currency--col label {
+	font-size: 12px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.currency--col .currency__arrow {
+	top: 85%;
+}
+
+@media(max-width:480px) {
+	.currency .currency__arrow svg {
+		width: 13px;
+		height: 13px;
+	}
+
+	.currency .currency__selector {
+		font-size: 18px;
+	}
+
+	.currency--col .currency__selector {
+		padding-left: 0
+	}
+}

@@ -1,0 +1,34 @@
+.section-video {
+	padding-block: 40px;
+	background: linear-gradient(to bottom, var(--sky-blue), var(--sky-blue-secondary));
+}
+
+.section-video .section__title {
+	font-family: var(--assistant);
+	color: var(--white);
+	font-size: 40px;
+	line-height: 1.3;
+	margin-bottom: 35px;
+}
+
+.section-video .section__video-wrapper video {
+	aspect-ratio: 1098/617;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.section-video .section__inner {
+	padding-inline: 50px;
+}
+
+@media(max-width:768px) {
+	.section-video {
+		padding-block: 30px;
+	}
+
+	.section-video .section__inner {
+	padding-inline: 0;
+}
+}	
