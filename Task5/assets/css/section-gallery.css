@@ -1,0 +1,38 @@
+.section-gallery {
+	padding-block: 30px;
+}
+
+.section-gallery .section__title {
+	margin-bottom: 30px;
+}
+
+.section-gallery .section__card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.section-gallery .section__card-image {
+	margin-bottom: 10px;
+}
+
+@media(max-width:768px) {
+	.section-gallery .swiper-wrapper {
+		margin-bottom: 50px;
+	}
+
+	.container--no-padding-right {
+		padding-right: 0;
+	}
+
+	.section-gallery .swiper-scrollbar {
+		height: 1px;
+		width: 95%;
+	}
+
+	.section-gallery .swiper-scrollbar-drag {
+		background-color: var(--midnight);
+	}
+}
+

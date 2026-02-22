@@ -1,0 +1,9 @@
+.announcement-bar {
+	background-color: var(--black);
+	text-align: center;
+	padding-block: 10px;
+}
+
+.announcement-bar .announcement__entry {
+	color: var(--white);
+}
