@@ -1,0 +1,308 @@
+:root {
+	--white:#ffffff;
+	--white-grayish: #B9B9B9;
+	--black:#242424;
+	--pink: #F681C1;
+	--pink-secondary: #FCC5E3;
+	--pink-light: #FEECF6;
+	--pink-grayish: #F6F3F6;
+	--gray: #515151;
+	--gray-dark: #2E2E2E;
+	--gray-light:#747474;
+	--purple: #9683A0;
+	--green: #427E86;
+	--green-light: #e4f0f2;
+
+	--poppins: 'Poppins';
+	--inter: 'Inter';
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: calc(1* 62.5%);
+	height: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--inter);
+	color: var(--gray);
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 500;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ul li a {
+	text-transform: uppercase;
+}
+
+span {
+	display: inline-block;
+}
+
+.caption {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing:0.36rem;
+	text-transform: uppercase;
+	color: var(--purple);
+	line-height: 1.6;
+}
+
+.caption--green {
+	background-color: var(--green-light);
+	color: var(--green);
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 8px 16px;
+	letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h5 {
+	color: var(--black);
+	font-family: var(--poppins);
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -0.06rem;
+	text-transform: capitalize;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-family: var(--inter);
+	color: var(--black);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.6;
+	letter-spacing: 0.04rem;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-family: var(--inter);
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+}
+
+.container {
+	max-width: 1248px;
+	width: 100%;
+	padding-inline: 24px;
+	margin: 0 auto;
+}
+
+.button-solid {
+	display: inline-flex;
+	align-items: center;
+	border: none;
+	gap: 17px;
+	padding: 14px 24px;
+	border-radius: 6px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color: var(--pink);
+	color: var(--white);
+	font-size: 16px;
+}
+
+.button-solid--square {
+	border-radius: 0;
+	padding: 16px 42px;
+}
+
+.button-solid--white {
+	background-color: var(--white);
+	color: var(--gray-light);
+	padding: 16px 42px;
+}
+
+.button-outlined {
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 6px;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.button-outlined--gray {
+	border-color: var(--gray-light);
+	color: var(--gray-light);
+}
+
+.button-outlined--green {
+	border-color: var(--green);
+	color: var(--green);
+}
+
+.button-outlined--purple {
+	border-color: var(--purple);
+	color: var(--purple);
+	display: inline-flex;
+	align-items: center;
+}
+
+.button-pack {
+	padding: 14px 30px;
+	display: inline-block;
+	border-radius: 8px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid;
+	cursor: pointer;
+	color: var(--white-grayish);
+	border-color: var(--white-grayish);
+}
+
+.color-button {
+	width: 60px;
+	height: 60px;
+  cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.color-button::before {
+  content: "";
+  width: 48px;   
+  height: 48px;
+  background-color: var(--pink);
+	border-radius: 8px;
+}
+
+.color-button--green::before {
+  background-color: var(--green);
+}
+
+.color-button--black::before {
+  background-color: var(--black);
+}
+
+.action-icon svg {
+	display: block;
+}
+
+.is-hidden {
+	display: none;
+}
+
+body.is-disabled {
+	overflow: hidden;
+}
+
+.button-solid:hover,
+.button-outlined:hover,
+button:hover,
+a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.header li a:hover,
+.footer li a:hover {
+  text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+@media(max-width: 1023px) {
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	.caption {
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 480px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h4 {
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+
+	h5 {
+		font-size: 24px;
+		letter-spacing: -0.03rem;
+	}
+
+	h6 {
+		letter-spacing: 0.33rem;
+	}
+
+	.caption {
+		font-size: 14px;
+		letter-spacing: 0.27rem;
+	}
+
+	.caption--green {
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+
+	.button-solid--square {
+		font-size: 16px;
+	}
+
+	.button-solid--white {
+		font-size: 16px;
+	}
+}

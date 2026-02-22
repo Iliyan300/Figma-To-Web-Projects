@@ -1,0 +1,109 @@
+.section-faq {
+	background-color: var(--pink-grayish);
+	padding-block: 103px;
+	text-align: center;
+}
+
+.section-faq .section__title {
+	margin-top: 16px;
+}
+
+.section-faq .section__dropdowns {
+	margin-top: 88px;
+}
+
+.section-faq .section__dropdown {
+	background-color: var(--white);
+	padding: 24px 32px;
+	text-align: start;
+	max-width: 996px;
+	display: inline-block;
+	border-radius: 6px;
+}
+
+.section-faq .section__dropdown + .section__dropdown {
+	margin-top: 26px;
+}
+
+.section-faq .section__dropdown-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	cursor: pointer;
+}
+
+.section-faq .section__dropdown-arrow {
+	transition: 300ms ease;
+}
+
+.section-faq .section__dropdown-arrow svg {
+	display: block;
+}
+
+.section-faq .section__dropdown-wrapper {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: 300ms ease;
+}
+
+.section-faq .section__dropdown.is-open .section__dropdown-wrapper {
+	grid-template-rows: 1fr;
+	border-top: 3px solid #D5D5D5;
+	margin-top: 20px;
+	padding: 31px 0 20px 0;
+}
+
+.section-faq .section__dropdown-entry {
+	overflow: hidden;
+	letter-spacing: 0.01rem;
+	padding-right: 30px;
+}
+
+.section-faq .section__dropdown.is-open .section__dropdown-arrow {
+	transform: rotate(180deg);
+}
+
+.section-faq .section__actions {
+	margin-top: 63px;
+}
+
+@media(max-width: 767px) {
+	.section-faq {
+		padding-block: 82px;
+	}
+
+	.section-faq .section__dropdowns {
+		margin-top: 63px;
+	}
+
+	.section-faq .section__dropdown {
+		padding-inline: 24px;
+	}
+
+	.section-faq .section__dropdown + .section__dropdown {
+		margin-top: 24px;
+	}
+
+	.section-faq .section__dropdown-header {
+		gap: 45px;
+	}
+
+	.section-faq .section__dropdown-entry {
+		padding-right: 0;	
+		letter-spacing: 0;
+		font-size: 14px;
+	}
+
+	.section-faq .section__actions {
+		margin-top: 65px;
+	}
+}
+
+
+@media(max-width: 480px) {
+		.section-faq .section__dropdown-arrow svg {
+			width: 24px;
+			height: 24px;
+		}
+}
